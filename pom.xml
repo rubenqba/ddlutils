@@ -18,17 +18,32 @@
 		<artifactId>apache</artifactId>
 		<version>17</version>
 	</parent>
-	<groupId>org.apache.ddlutils</groupId>
+	<groupId>org.github.rubenqba</groupId>
 	<artifactId>ddlutils</artifactId>
 	<packaging>jar</packaging>
 	<version>1.2-SNAPSHOT</version>
 	<name>Apache DdlUtils</name>
 	<description>
     DdlUtils is a small, easy-to-use component for working with Database Definition (DDL) files.
+    Cloned from https://github.com/apache/ddlutils
   </description>
 	<inceptionYear>2005</inceptionYear>
 	<url>http://db.apache.org/ddlutils</url>
 
+	<!-- Configuración de repositorios de distribución de artefactos -->
+	<distributionManagement>
+		<repository>
+			<id>sonatype-nexus-snapshots</id>
+			<name>deploy-releases</name>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+		</repository>
+		<snapshotRepository>
+			<id>sonatype-nexus-snapshots</id>
+			<name>deploy-snapshots</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+	
 	<mailingLists>
 		<mailingList>
 			<name>Ddlutils Dev List</name>
@@ -83,17 +98,11 @@
 	</licenses>
 
 	<scm>
-		<connection>scm:svn:http://svn.apache.org/repos/asf/db/ddlutils/trunk/</connection>
-		<developerConnection>scm:svn:https://svn.apache.org/repos/asf/db/ddlutils/trunk/</developerConnection>
-		<url>http://svn.apache.org/viewcvs.cgi/db/ddlutils/trunk/</url>
+		<connection>scm:git:https://github.com/rubenqba/ddlutils</connection>
+		<developerConnection>scm:git:https://github.com/rubenqba/ddlutils.git</developerConnection>
+		<url>https://github.com/rubenqba/ddlutils</url>
+		<tag>HEAD</tag>
 	</scm>
-
-	<distributionManagement>
-		<site>
-			<id>apache.website</id>
-			<url>scp://minotaur.apache.org/www/db.apache.org/ddlutils/</url>
-		</site>
-	</distributionManagement>
 
 	<dependencies>
 		<dependency>
