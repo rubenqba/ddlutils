@@ -18,7 +18,7 @@
 		<artifactId>apache</artifactId>
 		<version>17</version>
 	</parent>
-	<groupId>com.github.rubenqba</groupId>
+	<groupId>com.github.rubenqba.ddlutils</groupId>
 	<artifactId>ddlutils</artifactId>
 	<packaging>jar</packaging>
 	<version>1.2-SNAPSHOT</version>
