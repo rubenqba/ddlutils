@@ -33,7 +33,7 @@
 	<!-- Configuración de repositorios de distribución de artefactos -->
 	<distributionManagement>
 		<repository>
-			<id>sonatype-nexus-snapshots</id>
+			<id>sonatype-nexus-releases</id>
 			<name>deploy-releases</name>
 			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
 		</repository>
